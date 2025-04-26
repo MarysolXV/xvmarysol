@@ -1,3 +1,4 @@
+import { db, collection, addDoc } from "./firebase"; // ¡Asegúrate de tener esto importado!
 import Galeria from "./Galeria"; // Importa el componente
 import RSVPForm from "./RSVPForm";
 import AOS from "aos";
@@ -15,6 +16,32 @@ const App = () => {
   const [nombreInvitado, setNombreInvitado] = useState("Invitado especial");
   const [audio, setAudio] = useState(null);
   const [sonando, setSonando] = useState(false);
+  const [mensajeLibro, setMensajeLibro] = useState("");
+  const [mensajeEnviado, setMensajeEnviado] = useState("");
+
+  const enviarMensajeLibro = async () => {
+    if (!mensajeLibro.trim()) {
+      setMensajeEnviado("Por favor escribe un mensaje antes de enviar.");
+      return;
+    }
+
+    try {
+      await addDoc(collection(db, "libroVisitas"), {
+        mensaje: mensajeLibro,
+        timestamp: new Date()
+      });
+      setMensajeEnviado("¡Gracias por tu mensaje!");
+      setMensajeLibro(""); // Limpiar el textarea
+    } catch (error) {
+      console.error("Error al enviar el mensaje:", error);
+      setMensajeEnviado("Hubo un error al enviar tu mensaje. Intenta de nuevo.");
+    }
+  };
+
+
+
+
+
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -125,20 +152,34 @@ const App = () => {
 <section className="py-16 bg-white" data-aos="fade-up">
 
   <RSVPForm />
+
 </section>
 
-      <section className="py-16 text-center bg-[#FFD44A]/20" data-aos="fade-up">
-        <h2 className="text-3xl font-bold text-[#FEA201] mb-4">Libro de visitas</h2>
-        <p className="mb-4">Déjame un mensajito bonito 🥰</p>
-        <textarea
-          className="w-3/4 md:w-1/2 h-32 p-4 rounded border-2 border-[#FE9BBA]"
-          placeholder="Escribe tu mensaje aquí..."
-        ></textarea>
-        <br />
-        <button className="mt-4 bg-[#FF3471] text-white px-6 py-2 rounded-full hover:bg-[#FEA201]">
-          Enviar mensaje
-        </button>
-      </section>
+<section className="py-16 text-center bg-[#FFD44A]/20" data-aos="fade-up">
+  <h2 className="text-3xl font-bold text-[#FEA201] mb-4">Libro de visitas</h2>
+  <p className="mb-4">Déjame un mensajito bonito 🥰</p>
+  
+  <textarea
+    value={mensajeLibro}
+    onChange={(e) => setMensajeLibro(e.target.value)}
+    className="w-3/4 md:w-1/2 h-32 p-4 rounded border-2 border-[#FE9BBA]"
+    placeholder="Escribe tu mensaje aquí..."
+  ></textarea>
+
+  <br />
+
+  <button
+    onClick={enviarMensajeLibro}
+    className="mt-4 bg-[#FF3471] text-white px-6 py-2 rounded-full hover:bg-[#FEA201]"
+  >
+    Enviar mensaje
+  </button>
+
+  {mensajeEnviado && (
+    <p className="mt-4 text-green-600 font-semibold">{mensajeEnviado}</p>
+  )}
+</section>
+
     </div>
   );
 };
