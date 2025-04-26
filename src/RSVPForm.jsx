@@ -51,8 +51,8 @@ const RSVPForm = () => {
     <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg text-center">
       <h2 className="text-2xl font-bold text-[#FEA201] mb-4">Confirma tu asistencia</h2>
       
-      <p className="mb-4 text-lg font-semibold">Invitado: {nombre}</p>
-      <p className="mb-4 text-md">Máximo acompañantes: {acompanantesPermitidos}</p>
+      <p className="mb-4 text-lg font-semibold">{nombre}</p>
+      <p className="mb-4 text-md">Recepciones: {acompanantesPermitidos}</p>
 
       <div className="mb-4">
         <label className="block mb-2">¿Asistirás?</label>
@@ -70,7 +70,7 @@ const RSVPForm = () => {
 
       {confirmacion === "Sí" && (
         <div className="mb-4">
-          <label className="block mb-2">¿Cuántos acompañantes llevarás?</label>
+          <label className="block mb-2">¿Cuántas personas asistirán?</label>
           <input
             type="number"
             min="0"
