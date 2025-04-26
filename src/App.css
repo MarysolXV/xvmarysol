@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+/* Letras normales para todo */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Letras cursivas solo para títulos */
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -25,6 +36,7 @@
   to {
     transform: rotate(360deg);
   }
+
 }
 
 @media (prefers-reduced-motion: no-preference) {

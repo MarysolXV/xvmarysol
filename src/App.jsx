@@ -90,7 +90,8 @@ const App = () => {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          ¡Estás invitado a los XV años de Marysol!
+          ¡Mis XV Años!
+Marysol
         </motion.h1>
         <p className="text-xl md:text-2xl mb-2">Querido {nombreInvitado},</p>
         <p className="max-w-xl">
