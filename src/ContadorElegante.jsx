@@ -71,7 +71,7 @@ toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
 
   return (
     <section className="py-16 px-6 text-center" data-aos="fade-up">
-      <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">¡Faltan!</h2>
+      <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8"> Solo faltan:</h2>
       <div className="flex text-lg justify-center gap-6 text-lg md:text-2xl font-semibold">
 
         <div className="flex flex-col items-center">

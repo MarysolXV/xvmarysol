@@ -86,7 +86,18 @@ const enviarMensajeLibro = async () => {
 
 
   return (
-     <div className="text-gray-800 font-sans scroll-smooth bg-animate">
+     <div className="relative text-gray-800 font-sans scroll-smooth bg-animate">
+
+{/* 🌸 Capa de decoración de flores blancas */}
+<div className="absolute inset-0 pointer-events-none z-0">
+  <img
+    src="/public/images/flores-orilla.png"  // Asegúrate de que el nombre del archivo coincida
+    alt="Decoración de flores"
+    className="w-full h-full object-cover opacity-20"
+  />
+</div>
+
+
      <Toaster position="top-center" reverseOrder={false} />
 
 
@@ -129,7 +140,7 @@ const enviarMensajeLibro = async () => {
 <ContadorElegante />
 
 
-   
+  
 
 
 
@@ -139,6 +150,8 @@ const enviarMensajeLibro = async () => {
 
 <section className="py-16 px-6 text-center" data-aos="fade-up">
   <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">Con mucho amor me acompañan</h2>
+
+
 
   <div className="max-w-2xl mx-auto text-lg md:text-xl space-y-12">
 
@@ -167,7 +180,7 @@ const enviarMensajeLibro = async () => {
     {/* Mensaje final */}
     <div data-aos="fade-up" data-aos-delay="300" className="mt-10">
       <p className="text-[#FF3471] font-semibold text-xl">
-        ¡Acompáñame a celebrar este momento tan especial lleno de amor, alegría y sueños cumplidos!
+        ¡Acompáñame tu tambien a celebrar este momento tan especial lleno de amor, alegría y sueños cumplidos!
       </p>
     </div>
 
