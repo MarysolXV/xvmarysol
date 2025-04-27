@@ -129,7 +129,9 @@ const enviarMensajeLibro = async () => {
 
     <div className="text-center mb-10" data-aos="fade-up">
       <h2 className="text-5xl md:text-8xl font-bold drop-shadow-lg text-[#FFD44A]">Marysol</h2>
-    </div>
+
+
+   </div>
 
   </div>
 </section>

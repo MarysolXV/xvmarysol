@@ -71,6 +71,13 @@ toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
 
   return (
     <section className="py-16 px-6 text-center" data-aos="fade-up">
+
+<div className="mt-6 animate-bounce">
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+  </svg>
+</div>
+
       <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8"> Solo faltan:</h2>
       <div className="flex text-lg justify-center gap-6 text-lg md:text-2xl font-semibold">
 
