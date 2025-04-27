@@ -9,10 +9,6 @@ const RSVPForm = () => {
   const [mensaje, setMensaje] = useState("");
   const [invitacionValida, setInvitacionValida] = useState(true);
 
-  const RSVPForm = ({ onNombreConfirmado }) => {
-
-
-
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const nombreUrl = params.get("nombre");
