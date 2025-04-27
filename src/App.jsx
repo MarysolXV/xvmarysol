@@ -75,6 +75,9 @@ const App = () => {
 
   const tiempoRestante = Math.floor((eventDate.getTime() - Date.now()) / 1000);
 
+
+
+
   return (
     <div className="bg-gradient-to-br from-[#FE9BBA] via-[#ECBEED] to-[#93D8D5] text-gray-800 font-sans scroll-smooth">
       <button
@@ -150,7 +153,7 @@ const App = () => {
 
 
 
-<section className="py-16 px-6 text-center bg-white" data-aos="fade-up">
+<section className="py-16 px-6 text-center" data-aos="fade-up">
   <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">Con mucho amor me acompañan</h2>
 
   <div className="max-w-2xl mx-auto text-lg md:text-xl space-y-12">
@@ -195,7 +198,7 @@ const App = () => {
 
 
 
- <section className="py-16 px-6 text-center bg-[#F5EAFE]" data-aos="fade-up">
+ <section className="py-16 px-6 text-center" data-aos="fade-up">
   <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">Detalles del Evento</h2>
 
   <div className="max-w-3xl mx-auto space-y-10 text-lg md:text-xl">
@@ -239,7 +242,7 @@ const App = () => {
 
     
 
-<section className="py-16 px-6 text-center bg-[#ECBEED]" data-aos="fade-up">
+<section className="py-16 px-6 text-center" data-aos="fade-up">
   <h2 className="text-3xl font-bold text-[#FF3471] mb-10">Itinerario </h2>
   
   <div className="relative w-3/4 md:w-1/2 mx-auto">
@@ -285,22 +288,60 @@ const App = () => {
 
 
 
-      <section className="py-16 px-6 text-center bg-white" data-aos="zoom-in-up">
-        <h2 className="text-3xl font-bold text-[#FE9BBA] mb-4" data-aos="fade-up">
-  ¿Podrás acompañarme en este día tan especial?
+
+
+
+<section className="py-16 px-6 text-center bg-white" data-aos="fade-up">
+  <div className="flex flex-col items-center space-y-6">
+
+    {/* Ícono de cámara */}
+    <img src="/icons/camara.png" alt="Comparte tus fotos" className="w-16 h-16" data-aos="zoom-in" />
+
+    {/* Hashtag grande */}
+ <h2
+  className="text-4xl md:text-5xl font-bold text-[#FF3471] animate-heartbeat"
+  data-aos="fade-up"
+  data-aos-delay="100"
+>
+  #XVMarysol
 </h2>
 
-            
- 
+
+    {/* Texto bonito */}
+    <p className="max-w-2xl text-lg md:text-xl text-gray-700" data-aos="fade-up" data-aos-delay="200">
+      Comparte con nosotros tus fotos del evento usando el hashtag <span className="font-semibold text-[#FEA201]">#XVMarysol</span> en todas tus publicaciones en redes sociales.
+    </p>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+      <section className="py-16 px-6 text-center" data-aos="zoom-in-up">
+        <h2 className="text-3xl font-bold text-[#FE9BBA] mb-4" data-aos="fade-up">
+  ¿Podrás acompañarme en este día tan especial?
+</h2>             
       </section>
 
-<section className="py-16 bg-white" data-aos="fade-up">
+
+
+
+<section className="py-16" data-aos="fade-up">
 
   <RSVPForm />
 
 </section>
 
-<section className="py-16 text-center bg-[#FFD44A]/20" data-aos="fade-up">
+
+
+
+
+<section className="py-16 text-center" data-aos="fade-up">
   <h2 className="text-3xl font-bold text-[#FEA201] mb-4" data-aos="fade-up">
   Libro de visitas
 </h2>
@@ -327,6 +368,9 @@ const App = () => {
     <p className="mt-4 text-green-600 font-semibold">{mensajeEnviado}</p>
   )}
 </section>
+
+
+
 
  <Galeria />
 

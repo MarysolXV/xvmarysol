@@ -17,7 +17,7 @@ const fotos = [
 
 const Galeria = () => {
   return (
-    <section id="galeria" className="py-16 bg-[#ECBEED]">
+    <section id="galeria" className="py-16">
       <div className="container mx-auto px-6 text-center" data-aos="fade-up">
         <h2 className="text-4xl text-center font-bold mb-10 text-[#FF3471]">Galería de Fotos</h2>
 
