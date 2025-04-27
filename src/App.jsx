@@ -79,7 +79,11 @@ const App = () => {
 
 
   return (
-    <div className="bg-gradient-to-br from-[#FE9BBA] via-[#ECBEED] to-[#93D8D5] text-gray-800 font-sans scroll-smooth">
+     <div className="text-gray-800 font-sans scroll-smooth bg-animate">
+
+
+
+
       <button
         className="fixed top-4 right-4 bg-[#FFD44A] text-white rounded-full shadow p-2 z-50 hover:bg-[#FEA201] transition"
         onClick={toggleMusica}
@@ -199,7 +203,9 @@ const App = () => {
 
 
  <section className="py-16 px-6 text-center" data-aos="fade-up">
-  <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">Detalles del Evento</h2>
+<h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">
+  Detalles del Evento
+</h2>
 
   <div className="max-w-3xl mx-auto space-y-10 text-lg md:text-xl">
 
