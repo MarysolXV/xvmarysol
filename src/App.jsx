@@ -228,14 +228,14 @@ const enviarMensajeLibro = async () => {
     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
       <img src="/icons/vestimenta.png" alt="Código de Vestimenta" className="w-10 h-10 mb-4" />
       <p className="font-semibold text-[#FEA201]">Código de vestimenta:</p>
-      <p className="italic">Formal, colores primaverales 🌸 (Evitar negro)</p>
+      <p className="">Formal, colores primaverales 🌸 (Evitar negro)</p>
     </div>
 
     {/* Obsequios */}
     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
       <img src="/icons/obsequio.png" alt="Obsequios" className="w-10 h-10 mb-4" />
       <p className="font-semibold text-[#FEA201]">Obsequios:</p>
-      <p className="italic">Tu presencia es mi mejor regalo, pero si deseas obsequiarme algo tendremos lluvia de sobres.</p>
+      <p className="">Tu presencia es mi mejor regalo, pero si deseas obsequiarme algo tendremos lluvia de sobres.</p>
     </div>
 
   </div>
