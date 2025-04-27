@@ -1,3 +1,4 @@
+
 import { Toaster, toast } from "react-hot-toast";
 import { db, collection, addDoc } from "./firebase"; // ¡Asegúrate de tener esto importado!
 import Galeria from "./Galeria"; // Importa el componente
@@ -10,6 +11,7 @@ import { motion } from "framer-motion";
 import { Howl } from "howler";
 import "./App.css";
 import ContadorElegante from "./ContadorElegante";
+
 
 				
 
@@ -351,7 +353,6 @@ const App = () => {
     <p className="mt-4 text-green-600 font-semibold">{mensajeEnviado}</p>
   )}
 </section>
-
 
 
 
