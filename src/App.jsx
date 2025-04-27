@@ -25,24 +25,25 @@ const App = () => {
   const [mensajeLibro, setMensajeLibro] = useState("");
   const [mensajeEnviado, setMensajeEnviado] = useState("");
 
-  const enviarMensajeLibro = async () => {
-    if (!mensajeLibro.trim()) {
-      setMensajeEnviado("Por favor escribe un mensaje antes de enviar.");
-      return;
-    }
+const enviarMensajeLibro = async () => {
+  if (!mensajeLibro.trim()) {
+    setMensajeEnviado("Por favor escribe un mensaje antes de enviar.");
+    return;
+  }
 
-    try {
-      await addDoc(collection(db, "libroVisitas"), {
-        mensaje: mensajeLibro,
-        timestamp: new Date()
-      });
-      setMensajeEnviado("¡Gracias por tu mensaje!");
-      setMensajeLibro(""); // Limpiar el textarea
-    } catch (error) {
-      console.error("Error al enviar el mensaje:", error);
-      setMensajeEnviado("Hubo un error al enviar tu mensaje. Intenta de nuevo.");
-    }
-  };
+  try {
+    await addDoc(collection(db, "libroVisitas"), {
+      nombre: nombreInvitado, // 👈 Nuevo: agregamos nombre
+      mensaje: mensajeLibro,
+      timestamp: new Date()
+    });
+    setMensajeEnviado("¡Gracias por tu mensaje!");
+    setMensajeLibro(""); // Limpiar el textarea
+  } catch (error) {
+    console.error("Error al enviar el mensaje:", error);
+    setMensajeEnviado("Hubo un error al enviar tu mensaje. Intenta de nuevo.");
+  }
+};
 
 
 
