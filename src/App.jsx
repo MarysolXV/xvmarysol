@@ -93,7 +93,7 @@ const enviarMensajeLibro = async () => {
   <img
     src="/public/images/flores-orilla.png"  // Asegúrate de que el nombre del archivo coincida
     alt="Decoración de flores"
-    className="w-full h-full object-cover opacity-20"
+    className="w-full h-full object-cover opacity-40"
   />
 </div>
 
