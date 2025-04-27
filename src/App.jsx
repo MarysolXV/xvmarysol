@@ -1,7 +1,7 @@
 
 import { Toaster, toast } from "react-hot-toast";
 import { db, collection, addDoc } from "./firebase"; // ¡Asegúrate de tener esto importado!
-import Galeria from "./Galeria"; // Importa el componente
+
 import RSVPForm from "./RSVPForm";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -164,8 +164,8 @@ const enviarMensajeLibro = async () => {
       {/* Línea dorada más larga y fina */}
       <div className="w-40 h-0.5 bg-[#FEA201] mx-auto my-4 rounded-full"></div>
 
-      <p className="italic">María Elena Ruiz Paredes</p>
-      <p className="italic">Salomón Cárdenas Fierro</p>
+      <p className="">María Elena Ruiz Paredes</p>
+      <p className="">Salomón Cárdenas Fierro</p>
     </div>
 
     {/* Bloque de Padrinos */}
@@ -175,8 +175,8 @@ const enviarMensajeLibro = async () => {
       {/* Línea dorada más larga y fina */}
       <div className="w-40 h-0.5 bg-[#FEA201] mx-auto my-4 rounded-full"></div>
 
-      <p className="italic">Rocio Ruiz Paredes</p>
-      <p className="italic">Lennin Hansmann Vázquez</p>
+      <p className="">Rocio Ruiz Paredes</p>
+      <p className="">Lennin Hansmann Vázquez</p>
     </div>
 
     {/* Mensaje final */}
@@ -372,7 +372,6 @@ const enviarMensajeLibro = async () => {
 
 
 
- <Galeria />
 
     </div>
   );

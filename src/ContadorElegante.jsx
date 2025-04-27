@@ -82,19 +82,19 @@ toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
       <div className="flex text-lg justify-center gap-6 text-lg md:text-2xl font-semibold">
 
         <div className="flex flex-col items-center">
-          <span className="text-3xl md:text-5xl text-[#FEA201]">{dias}</span>
+          <span className="text-3xl md:text-4xl text-[#FEA201]">{dias}</span>
           <span>Días</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-3xl md:text-5xl text-[#FEA201]">{horas}</span>
+          <span className="text-3xl md:text-4xl text-[#FEA201]">{horas}</span>
           <span>Horas</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-3xl md:text-5xl text-[#FEA201]">{minutos}</span>
+          <span className="text-3xl md:text-4xl text-[#FEA201]">{minutos}</span>
           <span>Minutos</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-3xl md:text-5xl text-[#FEA201]">{segundos}</span>
+          <span className="text-3xl md:text-4xl text-[#FEA201]">{segundos}</span>
           <span>Segundos</span>
         </div>
       </div>
