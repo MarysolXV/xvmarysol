@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "canvas-confetti": "^1.9.3",
     "firebase": "^11.6.0",
     "framer-motion": "^10.16.1",
     "howler": "^2.2.4",

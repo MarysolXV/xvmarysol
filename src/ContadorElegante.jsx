@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import confetti from "canvas-confetti"; // 🎉 Agregamos confetti
 
 const eventDate = new Date("2025-07-19T19:00:00");
 
@@ -31,7 +32,7 @@ const ContadorElegante = () => {
   };
 
   const descargarICS = () => {
-    const contenidoICS = `
+  const contenidoICS = `
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//XV Marysol//EN
@@ -43,16 +44,25 @@ DESCRIPTION:Acompáñame a celebrar mis XV años en el Jardín Magno.
 LOCATION:Jardín Magno, Mexicali, B.C.
 END:VEVENT
 END:VCALENDAR
-    `.trim();
+  `.trim();
 
-    const blob = new Blob([contenidoICS], { type: "text/calendar;charset=utf-8" });
-    const enlace = document.createElement("a");
-    enlace.href = URL.createObjectURL(blob);
-    enlace.download = "XVMarysol.ics";
-    document.body.appendChild(enlace);
-    enlace.click();
-    document.body.removeChild(enlace);
-  };
+  const blob = new Blob([contenidoICS], { type: "text/calendar;charset=utf-8" });
+  const enlace = document.createElement("a");
+  enlace.href = URL.createObjectURL(blob);
+  enlace.download = "XVMarysol.ics";
+  document.body.appendChild(enlace);
+  enlace.click();
+  document.body.removeChild(enlace);
+
+  // 🎊 Confeti personalizado con colores de la invitación
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+    colors: ["#93D8D5", "#AEE1F9", "#FFD44A", "#ECBEED"],
+  });
+};
+
 
   return (
     <section className="py-16 px-6 text-center" data-aos="fade-up">
