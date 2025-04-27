@@ -84,6 +84,7 @@ const App = () => {
 
   return (
      <div className="text-gray-800 font-sans scroll-smooth bg-animate">
+     <Toaster position="top-center" reverseOrder={false} />
 
 
 

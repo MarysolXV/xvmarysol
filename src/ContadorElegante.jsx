@@ -21,7 +21,7 @@ const ContadorElegante = () => {
 
   const crearEnlaceGoogleCalendar = () => {
     const startDate = "20250719T190000";
-    const endDate = "20250719T240000"; // Ejemplo de 4 horas
+    const endDate = "20250720T000000"; // Ejemplo de 4 horas
     const text = "XV Años de Marysol";
     const location = "Jardín Magno, Mexicali, B.C.";
     const details = "Acompáñame a celebrar mis XV años.";
@@ -40,7 +40,7 @@ VERSION:2.0
 PRODID:-//XV Marysol//EN
 BEGIN:VEVENT
 DTSTART:20250719T190000
-DTEND:20250719T230000
+DTEND:20250720T000000
 SUMMARY:XV Años de Marysol
 DESCRIPTION:Acompáñame a celebrar mis XV años en el Jardín Magno.
 LOCATION:Jardín Magno, Mexicali, B.C.
@@ -72,21 +72,22 @@ toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
   return (
     <section className="py-16 px-6 text-center" data-aos="fade-up">
       <h2 className="text-3xl md:text-5xl font-bold text-[#FF3471] mb-8">¡Faltan!</h2>
-      <div className="flex justify-center gap-6 text-2xl font-semibold">
+      <div className="flex flex-wrap justify-center gap-6 text-lg md:text-2xl font-semibold">
+
         <div className="flex flex-col items-center">
-          <span className="text-4xl text-[#FEA201]">{dias}</span>
+          <span className="text-3xl md:text-5xl text-[#FEA201]">{dias}</span>
           <span>Días</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-4xl text-[#FEA201]">{horas}</span>
+          <span className="text-3xl md:text-5xl text-[#FEA201]">{horas}</span>
           <span>Horas</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-4xl text-[#FEA201]">{minutos}</span>
+          <span className="text-3xl md:text-5xl text-[#FEA201]">{minutos}</span>
           <span>Minutos</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-4xl text-[#FEA201]">{segundos}</span>
+          <span className="text-3xl md:text-5xl text-[#FEA201]">{segundos}</span>
           <span>Segundos</span>
         </div>
       </div>
