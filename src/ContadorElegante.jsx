@@ -21,7 +21,7 @@ const ContadorElegante = () => {
 
   const crearEnlaceGoogleCalendar = () => {
     const startDate = "20250719T190000";
-    const endDate = "20250719T230000"; // Ejemplo de 4 horas
+    const endDate = "20250719T240000"; // Ejemplo de 4 horas
     const text = "XV Años de Marysol";
     const location = "Jardín Magno, Mexicali, B.C.";
     const details = "Acompáñame a celebrar mis XV años.";
@@ -29,6 +29,8 @@ const ContadorElegante = () => {
     const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(text)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
 
     window.open(url, "_blank");
+
+    toast.success("¡Evento agregado al calendario! 🎉 Nos vemos en los XV de Marysol.");
   };
 
   const descargarICS = () => {
@@ -61,7 +63,10 @@ END:VCALENDAR
     origin: { y: 0.6 },
     colors: ["#93D8D5", "#AEE1F9", "#FFD44A", "#ECBEED"],
   });
+toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
 };
+
+
 
 
   return (

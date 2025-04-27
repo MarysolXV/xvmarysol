@@ -1,3 +1,4 @@
+import { Toaster, toast } from "react-hot-toast";
 import { db, collection, addDoc } from "./firebase"; // ¡Asegúrate de tener esto importado!
 import Galeria from "./Galeria"; // Importa el componente
 import RSVPForm from "./RSVPForm";
