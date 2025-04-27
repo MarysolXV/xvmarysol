@@ -8,9 +8,12 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { motion } from "framer-motion";
 import { Howl } from "howler";
 import "./App.css";
+import ContadorElegante from "./ContadorElegante";
+
 				
 
 const eventDate = new Date("2025-07-19T19:00:00");
+
 
 const App = () => {
   const [nombreInvitado, setNombreInvitado] = useState("Invitado especial");
@@ -118,38 +121,10 @@ const App = () => {
 
 
 
+<ContadorElegante />
 
 
-
-      <section className="py-16 bg-white text-center" data-aos="zoom-in">
-        <h2 className="text-3xl font-semibold text-[#FEA201] mb-4" data-aos="fade-up">
-  Faltan:
-</h2>
-
-        <div className="flex justify-center">
-          <CountdownCircleTimer
-            isPlaying
-            duration={tiempoRestante}
-            colors={["#FEA201", "#FFD44A"]}
-            colorsTime={[600, 300]}
-            size={180}
-          >
-            {({ remainingTime }) => {
-              const dias = Math.floor(remainingTime / (3600 * 24));
-              const horas = Math.floor((remainingTime % (3600 * 24)) / 3600);
-              const minutos = Math.floor((remainingTime % 3600) / 60);
-              return (
-                <div>
-                  <p className="text-lg">{dias} días</p>
-                  <p className="text-lg">{horas} hrs</p>
-                  <p className="text-lg">{minutos} min</p>
-                </div>
-              );
-            }}
-          </CountdownCircleTimer>
-        </div>
-      </section>
-
+   
 
 
 
@@ -180,7 +155,7 @@ const App = () => {
       {/* Línea dorada más larga y fina */}
       <div className="w-40 h-0.5 bg-[#FEA201] mx-auto my-4 rounded-full"></div>
 
-      <p className="italic">Rocío Ruiz Paredes</p>
+      <p className="italic">Rocio Ruiz Paredes</p>
       <p className="italic">Lennin Hansmann Vázquez</p>
     </div>
 
@@ -329,7 +304,7 @@ const App = () => {
 
 
       <section className="py-16 px-6 text-center" data-aos="zoom-in-up">
-        <h2 className="text-3xl font-bold text-[#FE9BBA] mb-4" data-aos="fade-up">
+        <h2 className="text-4xl font-bold text-[#FF3471] mb-4" data-aos="fade-up">
   ¿Podrás acompañarme en este día tan especial?
 </h2>             
       </section>
