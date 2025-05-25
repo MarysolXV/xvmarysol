@@ -72,7 +72,7 @@ toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
   return (
     <section className="py-16 px-6 text-center" data-aos="fade-up">
 
-<div className="mt-6 animate-bounce">
+<div className="mt-2 animate-bounce">
   <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
   </svg>
@@ -101,18 +101,12 @@ toast.success("¡Evento descargado! 🎉 ¡Nos vemos en los XV de Marysol!");
 
       {/* Botones de calendario */}
       <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
-        <button
-          onClick={crearEnlaceGoogleCalendar}
-          className="bg-[#FFD44A] hover:bg-[#FF3471] text-white font-bold py-3 px-6 rounded-full shadow transition"
-        >
-          Agregar a Google Calendar 📅
-        </button>
 
         <button
           onClick={descargarICS}
           className="bg-[#93D8D5] hover:bg-[#AEE1F9] text-white font-bold py-3 px-6 rounded-full shadow transition"
         >
-          Descargar evento (.ics) 📥
+          Agregar al calendario 
         </button>
       </div>
     </section>
