@@ -219,7 +219,7 @@ const enviarMensajeLibro = async () => {
 
       {/* Mensaje final */}
       <div data-aos="fade-up" data-aos-delay="300" className="mt-10">
-        <p className="text-[#FF3471] font-semibold text-xl">
+        <p className="text-[#FFD44A] font-semibold text-xl">
           ¡Acompáñame tú también a celebrar este momento tan especial lleno de amor, alegría y sueños cumplidos!
         </p>
       </div>
