@@ -141,12 +141,12 @@ const enviarMensajeLibro = async () => {
 
 
 
-  {/* Imagen decorativa arriba */}
+  {/* Imagen decorativa corona */}
   <div className="flex justify-center mt-12 mb-2" data-aos="fade-down">
     <img
       src="/images/crown.png"
       alt="crown"
-      className="w-80 h-auto"
+      className="w-60 h-auto"
     />
   </div>
 
@@ -165,7 +165,7 @@ const enviarMensajeLibro = async () => {
 <p className="text-[90px] md:text-[110px] text-[#FF3471] leading-none font-[900] font-[Playfair Display]">
       19/JUL
     </p>
-    <p className="text-[90px] md:text-[110px] text-[#FFD44A] leading-none font-[900] font-[Playfair Display]">
+    <p className="text-[90px] md:text-[110px] text-[#FEA201] leading-none font-[900] font-[Playfair Display]">
       2025
     </p>
 
